@@ -1,10 +1,3 @@
-**Plan**  
-1. Introduce the project and its purpose.  
-2. Provide installation instructions.  
-3. Show how to run the Cypress tests.  
-4. Include licensing.  
-
-```markdown
 
 
 # SpaceCats
