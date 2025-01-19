@@ -1,0 +1,40 @@
+/// <reference types="cypress" />
+
+class RSEndurancePage {
+  visit() {
+    cy.visit('https://rsendurance.com/');
+  }
+  clickMenu() {
+    cy.get("svg[stroke='currentColor']").click({ force: true, multiple: true });
+  }
+  verifyVisibleLogo() {
+    cy.get("img[class='xl:hidden flex']").should('be.visible');
+  }
+  closePopup() {
+    cy.get("svg[name='close']").click({ force: true });
+  }
+  goToFindCoach() {
+    cy.get("a[href='/find-coach']").first().click({ force: true });
+  }
+  goToTrainingPlans() {
+    cy.get("a[href='/training-plans']").first().click({ force: true });
+  }
+  goToSubscription() {
+    cy.get("a[href='/subscription?tab=coach']").first().click({ force: true });
+  }
+  goToAbout() {
+    cy.get("a[href='/about']").first().click({ force: true });
+  }
+  goToMedia() {
+    cy.get("a[href='/media']").first().click({ force: true });
+  }
+  goToBlog() {
+    cy.get("a[href='/blog']").first().click({ force: true });
+  }
+
+  gotoHome() {
+    cy.get("a[href='/']").first().click({ force: true });
+  }
+}
+
+export default RSEndurancePage;
